@@ -1,251 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lead.Create.Innovate.</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
-  </head>
-  <body>
-    <nav id="desktop-nav">
-      <div class="logo">Lead.Create.Innovate.</div>
-      <div>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anāhat Deshmukh | AI/ML Engineer & Entrepreneur</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav id="desktop-nav">
+    <div class="logo">Anāhat Deshmukh</div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Brands</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <nav id="hamburger-nav">
+    <div class="logo">Anāhat Deshmukh</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
-    </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">Innovate. Engineer. Lead.</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Brands</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
       </div>
-    </nav>
-    <section id="profile">
+    </div>
+  </nav>
+
+  <!-- Profile Section -->
+  <section id="profile">
+    <div class="section__pic-container">
+      <img src="./assets/Mypic.png" alt="Anāhat Deshmukh profile picture">
+    </div>
+    <div class="section__text">
+      <p class="section__text__p1">Hello, I'm</p>
+      <h1>Anāhat Deshmukh</h1>
+      <p class="section__text__p2">AI/ML Engineer & Entrepreneur</p>
+      <p class="section__text__p3">
+        Co-Founder & CEO @AuralScenes<br>
+        CMO @Avartan Concerts
+      </p>
+      <div class="btn-container">
+        <button class="btn btn-color-2" onclick="window.open('./assets/Bio.pdf')">
+          Download Bio
+        </button>
+        <button class="btn btn-color-1" onclick="location.href='https://www.instagram.com/anahatdeshmukh/'">
+          Instagram
+        </button>
+      </div>
+      <div id="socials-container">
+        <img src="./assets/linkedin.png" alt="LinkedIn" class="icon" 
+             onclick="location.href='https://www.linkedin.com/in/anahat-deshmukh-258340235/'">
+        <img src="./assets/github.png" alt="Github" class="icon" 
+             onclick="location.href='https://github.com/'">
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <p class="section__text__p1">Get To Know More</p>
+    <h1>About Me</h1>
+    <div class="section-container">
       <div class="section__pic-container">
-        <img src="./assets/Mypic.png" alt="John Doe profile picture" />
+        <img src="./assets/Mypic2.png" alt="Profile picture" class="about-pic">
       </div>
-      <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">Anāhat Deshmukh</h1>
-        <p class="section__text__p2">Co-Founder & CEO @AuralScenes</p>
-        <p class="section__text__p2">CMO @Avartan Concerts</p>
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('./assets/Bio.pdf')"
-          >
-            Download Bio
-          </button>
-          <button class="btn btn-color-1" onclick="location.href='https://www.instagram.com/anahatdeshmukh/'">
-            instagram
-          </button>
-        </div>
-        <div id="socials-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="My LinkedIn profile"
-            class="icon"
-            onclick="location.href='https://www.linkedin.com/in/anahat-deshmukh-258340235/'"
-          />
-          <img
-            src="./assets/github.png"
-            alt="My Github profile"
-            class="icon"
-            onclick="location.href='https://github.com/'"
-          />
-        </div>
-      </div>
-    </section>
-    <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
-      <h1 class="title">About Me</h1>
-      <div class="section-container">
-        <div class="section__pic-container">
-          <img
-            src="./assets/Mypic2.png"
-            alt="Profile picture"
-            class="about-pic"
-          />
-        </div>
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <img
-                src="./assets/experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <h3>Achievements</h3>
-              <p>Multiple times <br />State level winner in Indian Classical and Semi-Classical music</p>
-            </div>
-            <div class="details-container">
-              <img
-                src="./assets/education.png"
-                alt="Education icon"
-                class="icon"
-              />
-              <h3>Education</h3>
-              <p>B.E. Bachelor of Engineering<br />(Artificial Intelligence & Machine Learning)</p>
-            </div>
+      <div class="about-content">
+        <div class="about-highlights">
+          <div class="highlight-card">
+            <img src="./assets/experience.png" alt="Achievements icon" class="icon">
+            <h3>Achievements</h3>
+            <p>State level winner in Indian Classical and Semi-Classical music</p>
           </div>
-          <div class="text-container">
-            <p>
-              I am a second-year engineering student specializing in Artificial Intelligence and Machine Learning (AI/ML).
-            </p>
-            <h2>Technical Expertise</h2>
-
-I am actively exploring the intersection of technology, finance, and AI, particularly in the domains of:
-<ul>
-  <li>🔧 Web Dev (MERN) – Building scalable full-stack applications with Node.js, TS, MongoDB, and React, including AI-integrated tools and real-time data systems.</li>
-  <li>📊 Data Science & Machine Learning – Predictive analytics, deep learning, RAG and real-time statistical modeling & data modeling</li>
-  <li>📈 Financial Markets & Investments – PMS advisory, mutual & exchange traded funds, stocks, and researching market dynamics for long-term wealth creation.</li>
-  <li>📉 Derivatives, Crypto & Quant Trading - F&O, volatility modeling, and quantitative strategies</li>
-  <li>📑 Equity Research & Financial Studies – Market trends, financial modeling, SMC and investment strategies.</li>
-  <li>🚀 Entrepreneurship & Business Strategy – Developing innovative tech-based solutions, focusing on AI-driven automation in finance and media industries</li>
-</ul>
-
-<br><br>
-
-<h2>Music & Creative Pursuits</h2>
-
-<ul>
-  <li>Beyond technology and finance, I have a deep passion for music. I have won multiple first-place awards at state-level competitions in Indian Classical and Semi-Classical vocal music, showcasing my commitment to artistic excellence</li>
-  <li>🎚️ Sound Engineering – Mixing, mastering, and DAW-based production.</li>
-<li>🎼 Music Composition & Arrangement – Blending tradition with technology through digital music creation.</li>
-<li>🎧 Creative Tech Experiments – Spatial audio, and immersive sound experiences.</li>
-</ul>
-
+          <div class="highlight-card">
+            <img src="./assets/education.png" alt="Education icon" class="icon">
+            <h3>Education</h3>
+            <p>B.E. in Artificial Intelligence & Machine Learning</p>
           </div>
-          <br><br>
+        </div>
+        
+        <div class="about-details">
+          <p>
+            I am a second-year engineering student specializing in Artificial Intelligence and Machine Learning (AI/ML).
+          </p>
+          
+          <h3>Technical Expertise</h3>
+          <ul>
+            <li>🔧 Web Dev (MERN) – Building scalable full-stack applications</li>
+            <li>📊 Data Science & Machine Learning – Predictive analytics and modeling</li>
+            <li>📈 Financial Markets & Investments – PMS advisory and market research</li>
+            <li>📉 Derivatives, Crypto & Quant Trading - F&O and quantitative strategies</li>
+            <li>📑 Equity Research & Financial Studies – Market trends and modeling</li>
+            <li>🚀 Entrepreneurship & Business Strategy – AI-driven solutions</li>
+          </ul>
+
+          <h3>Music & Creative Pursuits</h3>
+          <ul>
+            <li>Multiple first-place awards in state-level music competitions</li>
+            <li>🎚️ Sound Engineering – Mixing, mastering, and production</li>
+            <li>🎼 Music Composition & Arrangement – Digital music creation</li>
+            <li>🎧 Creative Tech Experiments – Spatial audio experiences</li>
+          </ul>
         </div>
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#experience'"
-      />
-    </section>
-    <section id="experience">
-      <p class="section__text__p1">Explore Our</p>
-      <h1 class="title">Brands</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <h2 class="experience-sub-title">Avartan<br>Concerts</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Live Concerts</h3>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Advanced Ticket booking</h3>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Video on Demand</h3>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Access to Workshops</h3>
-                </div>
-              </article>
-            </div>
-          </div> 
-          <div class="details-container">
-            <h2 class="experience-sub-title">AuralScenes<br>LLP.</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Creator Management</h3>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Brand Management</h3>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Web Solutions</h3>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>SaaS Solutions</h3>
-                </div>
-              </article>
-            </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'">
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience">
+    <p class="section__text__p1">Explore My</p>
+    <h1>Brands</h1>
+    <div class="experience-container">
+      <div class="brand-card">
+        <h2>Avartan Concerts</h2>
+        <div class="brand-features">
+          <div class="feature">
+            <img src="./assets/checkmark.png" alt="Checkmark" class="icon">
+            <h3>Live Concerts</h3>
+          </div>
+          <div class="feature">
+            <img src="./assets/checkmark.png" alt="Checkmark" class="icon">
+            <h3>Advanced Ticket Booking</h3>
+          </div>
+          <div class="feature">
+            <img src="./assets/checkmark.png" alt="Checkmark" class="icon">
+            <h3>Video on Demand</h3>
+          </div>
+          <div class="feature">
+            <img src="./assets/checkmark.png" alt="Checkmark" class="icon">
+            <h3>Access to Workshops</h3>
           </div>
         </div>
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-      />
-    </section>
-    <!-- Rest of the code remains the same -->
-  </body>
+      
+      <div class="brand-card">
+        <h2>AuralScenes LLP</h2>
+        <div class="brand-features">
+          <div class="feature">
+            <img src="./assets/checkmark.png" alt="Checkmark" class="icon">
+            <h3>Creator Management</h3>
+          </div>
+          <div class="feature">
+            <img src="./assets/checkmark.png" alt="Checkmark" class="icon">
+            <h3>Brand Management</h3>
+          </div>
+          <div class="feature">
+            <img src="./assets/checkmark.png" alt="Checkmark" class="icon">
+            <h3>Web Solutions</h3>
+          </div>
+          <div class="feature">
+            <img src="./assets/checkmark.png" alt="Checkmark" class="icon">
+            <h3>SaaS Solutions</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h1>Get In Touch</h1>
+    <div class="contact-container">
+      <button class="btn btn-color-1" onclick="location.href='https://www.linkedin.com/in/anahat-deshmukh-258340235/'">
+        LinkedIn
+      </button>
+      <button class="btn btn-color-1" onclick="location.href='https://www.instagram.com/anahatdeshmukh/'">
+        Instagram
+      </button>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
 </html>
